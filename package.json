@@ -1,0 +1,57 @@
+{
+  "name": "export-dir-files",
+  "version": "0.0.0",
+  "description": "Require all files in a directory and export an object.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/export-dir-files.git"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "utility",
+    "dir",
+    "export",
+    "hash",
+    "require",
+    "all",
+    "files",
+    "js",
+    "json",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/export-dir-files/issues"
+  },
+  "dependencies": {
+    "utils-cwd": "^2.0.0",
+    "utils-extname": "^1.0.0",
+    "validate.io-string-primitive": "^1.0.0"
+  },
+  "devDependencies": {
+    "@kgryte/noop": "^1.0.0",
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
