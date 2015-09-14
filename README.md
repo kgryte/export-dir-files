@@ -23,7 +23,7 @@ var exportDir = require( 'export-dir-files' );
 Require all files in a directory and export an `object`.
 
 ``` javascript
-var out = exportDir( __dirname );
+var out = exportDir( 'path/to/directory' );
 // returns {...}
 ```
 
