@@ -87,7 +87,7 @@ var out = require( './bar' );
 ``` javascript
 var exportDir = require( 'export-dir-files' );
 
-var out = exportDir( '../test/fixtures' );
+var out = exportDir( './test/fixtures' );
 console.log( out );
 ```
 
