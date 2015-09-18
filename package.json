@@ -1,6 +1,6 @@
 {
   "name": "export-dir-files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Require all files in a directory and export an object.",
   "author": {
     "name": "Athan Reines",
